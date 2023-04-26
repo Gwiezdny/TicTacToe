@@ -1,18 +1,21 @@
 #pragma once
+#include <array>
 #include "Place.h"
 
 class Engine
 {
-	static const int x = 3;
-	static const int y = 3;
+	static const int mapSizeX = 3;
+	static const int mapSizeY = 3;
 	static const int forWin = 3;
 
-	int map[x][y];
-	Place lol(5, 5);
+	std::array<std::array<Place, mapSizeX>, mapSizeY> map;
+
+	sf::Mouse mouse																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																												;
 
 	int checkWin();
 
 public:
 	void gameLoop();
+	//void renderer();
+	Engine();
 };
-

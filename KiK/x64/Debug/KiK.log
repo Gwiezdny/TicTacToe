@@ -1,5 +1,38 @@
 ﻿  Engine.cpp
+C:\Users\Gwiezdny\Desktop\Brograming\KiK\KiK\Place.h(13,34): warning C4244: 'argument': conversion from 'const int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\Gwiezdny\Desktop\Brograming\KiK\KiK\Place.h(13,27): warning C4244: 'argument': conversion from 'const int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\Gwiezdny\Desktop\Brograming\KiK\KiK\Engine.cpp(14,97): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Gwiezdny\Desktop\Brograming\KiK\KiK\Engine.cpp(14,62): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  Place.cpp
+C:\Users\Gwiezdny\Desktop\Brograming\KiK\KiK\Place.h(13,34): warning C4244: 'argument': conversion from 'const int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\Gwiezdny\Desktop\Brograming\KiK\KiK\Place.h(13,27): warning C4244: 'argument': conversion from 'const int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
   main.cpp
+C:\Users\Gwiezdny\Desktop\Brograming\KiK\KiK\Place.h(13,34): warning C4244: 'argument': conversion from 'const int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\Gwiezdny\Desktop\Brograming\KiK\KiK\Place.h(13,27): warning C4244: 'argument': conversion from 'const int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
   Generating Code...
-C:\Users\Gwiezdny\Desktop\Brograming\KiK\KiK\Engine.cpp(100): warning C4715: 'Engine::checkWin': not all control paths return a value
+C:\Users\Gwiezdny\Desktop\Brograming\KiK\KiK\Engine.cpp(124): warning C4715: 'Engine::checkWin': not all control paths return a value
   KiK.vcxproj -> C:\Users\Gwiezdny\Desktop\Brograming\KiK\x64\Debug\KiK.exe
