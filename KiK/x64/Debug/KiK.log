@@ -1,38 +1,56 @@
 ﻿  Engine.cpp
-C:\Users\Gwiezdny\Desktop\Brograming\KiK\KiK\Place.h(13,34): warning C4244: 'argument': conversion from 'const int' to 'T', possible loss of data
+D:\Brograming\cpp\TicTacToe\KiK\Place.h(13,34): warning C4244: "argument": konwersja z "const int" do "T", możliwa utrata danych
           with
           [
               T=float
           ]
-C:\Users\Gwiezdny\Desktop\Brograming\KiK\KiK\Place.h(13,27): warning C4244: 'argument': conversion from 'const int' to 'T', possible loss of data
+D:\Brograming\cpp\TicTacToe\KiK\Place.h(13,27): warning C4244: "argument": konwersja z "const int" do "T", możliwa utrata danych
           with
           [
               T=float
           ]
-C:\Users\Gwiezdny\Desktop\Brograming\KiK\KiK\Engine.cpp(14,97): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\Gwiezdny\Desktop\Brograming\KiK\KiK\Engine.cpp(14,62): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Brograming\cpp\TicTacToe\KiK\Engine.cpp(15,97): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+D:\Brograming\cpp\TicTacToe\KiK\Engine.cpp(15,62): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+D:\Brograming\cpp\TicTacToe\KiK\Engine.cpp(126,85): warning C4244: "argument": konwersja z "T" do "T", możliwa utrata danych
+          with
+          [
+              T=int
+          ]
+          and
+          [
+              T=float
+          ]
+D:\Brograming\cpp\TicTacToe\KiK\Engine.cpp(126,73): warning C4244: "argument": konwersja z "T" do "T", możliwa utrata danych
+          with
+          [
+              T=int
+          ]
+          and
+          [
+              T=float
+          ]
   Place.cpp
-C:\Users\Gwiezdny\Desktop\Brograming\KiK\KiK\Place.h(13,34): warning C4244: 'argument': conversion from 'const int' to 'T', possible loss of data
+D:\Brograming\cpp\TicTacToe\KiK\Place.h(13,34): warning C4244: "argument": konwersja z "const int" do "T", możliwa utrata danych
           with
           [
               T=float
           ]
-C:\Users\Gwiezdny\Desktop\Brograming\KiK\KiK\Place.h(13,27): warning C4244: 'argument': conversion from 'const int' to 'T', possible loss of data
+D:\Brograming\cpp\TicTacToe\KiK\Place.h(13,27): warning C4244: "argument": konwersja z "const int" do "T", możliwa utrata danych
           with
           [
               T=float
           ]
   main.cpp
-C:\Users\Gwiezdny\Desktop\Brograming\KiK\KiK\Place.h(13,34): warning C4244: 'argument': conversion from 'const int' to 'T', possible loss of data
+D:\Brograming\cpp\TicTacToe\KiK\Place.h(13,34): warning C4244: "argument": konwersja z "const int" do "T", możliwa utrata danych
           with
           [
               T=float
           ]
-C:\Users\Gwiezdny\Desktop\Brograming\KiK\KiK\Place.h(13,27): warning C4244: 'argument': conversion from 'const int' to 'T', possible loss of data
+D:\Brograming\cpp\TicTacToe\KiK\Place.h(13,27): warning C4244: "argument": konwersja z "const int" do "T", możliwa utrata danych
           with
           [
               T=float
           ]
-  Generating Code...
-C:\Users\Gwiezdny\Desktop\Brograming\KiK\KiK\Engine.cpp(124): warning C4715: 'Engine::checkWin': not all control paths return a value
-  KiK.vcxproj -> C:\Users\Gwiezdny\Desktop\Brograming\KiK\x64\Debug\KiK.exe
+  Generowanie kodu...
+D:\Brograming\cpp\TicTacToe\KiK\Engine.cpp(111): warning C4715: "`Engine::gameLoop'::`2'::<lambda_2>::operator()”: niewszystkie ścieżki kodu zwracają wartość
+  KiK.vcxproj -> D:\Brograming\cpp\TicTacToe\x64\Debug\KiK.exe

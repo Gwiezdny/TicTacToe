@@ -12,8 +12,5 @@ public:
 	const int sizeY{ 128 };
 	sf::Vector2f sizeVector{ sizeX, sizeY };
 
-	//Place() = delete;
-	//~Place() = delete;
-
-	char sign{};
+	char sign{' '};
 };

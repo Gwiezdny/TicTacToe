@@ -8,14 +8,11 @@ class Engine
 	static const int mapSizeY = 3;
 	static const int forWin = 3;
 
-	std::array<std::array<Place, mapSizeX>, mapSizeY> map;
+	sf::Texture textureX;
+	sf::Texture textureY;
 
-	sf::Mouse mouse																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																												;
-
-	int checkWin();
-
+	std::array<std::array<Place, mapSizeX>, mapSizeY> map;																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											;
 public:
 	void gameLoop();
-	//void renderer();
 	Engine();
 };
