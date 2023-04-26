@@ -13,6 +13,8 @@ class Engine
 
 	std::array<std::array<Place, mapSizeX>, mapSizeY> map;																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											;
 public:
+	bool gameover = false;
+
 	void gameLoop();
 	Engine();
 };

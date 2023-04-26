@@ -3,7 +3,12 @@
 
 int main()
 {
-    Engine Engine;
+    while (true) {
+        Engine Engine;
+        Engine.gameLoop();
 
-    Engine.gameLoop();
+        if (Engine.gameover == false) {
+            break;
+        }
+    }
 }
