@@ -4,14 +4,15 @@
 
 class Engine
 {
-	static const int mapSizeX = 3;
-	static const int mapSizeY = 3;
-	static const int forWin = 3;
+	static const int mapSizeX = 4; // Rozmiar mapy w osi X
+	static const int mapSizeY = 4; // Rozmiar mapy w osi Y
+	static const int forWin = 3; // Wymagana liczba powtórzonych znaków wymagana do wygranej 
 
 	sf::Texture textureX;
-	sf::Texture textureY;
+	sf::Texture textureO;
 
-	std::array<std::array<Place, mapSizeX>, mapSizeY> map;																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											;
+	std::array<std::array<Place, mapSizeX>, mapSizeY> map;		
+	Place playerTurnPlace;
 public:
 	bool gameover = false;
 
