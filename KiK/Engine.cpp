@@ -6,9 +6,10 @@
 
 using namespace sf;
 
-Engine::Engine() {
+Engine::Engine(int* ptrScoreX, int* ptrScoreO) {
     if (!textureX.loadFromFile("assets/X.png")) { std::cout << "Texture loading failed...\n"; }
     if (!textureO.loadFromFile("assets/Y.png")) { std::cout << "Texture loading failed...\n"; }
+    if (!font.loadFromFile("assets/comic-sans-ms.ttf")) { std::cout << "Font loading error...\n"; }
 
     for (int i = 0; i < mapSizeY; i++) {
         for (int j = 0; j < mapSizeX; j++) {
@@ -22,6 +23,28 @@ Engine::Engine() {
     playerTurnPlace.object.setOrigin(playerTurnPlace.sizeX / 2, 0);
     playerTurnPlace.object.setPosition((float)(map[0][0].sizeX * mapSizeX + 8 * (mapSizeX + 1)) / 2, 8);
     playerTurnPlace.object.setTexture(&textureX);
+
+    scoreX = ptrScoreX;
+    scoreO = ptrScoreO;
+
+    txtScoreX.setFont(font);
+    txtScoreX.setCharacterSize(48);
+    txtScoreX.setFillColor(sf::Color::White);
+    txtScoreX.setPosition(8, 8);
+    txtScoreX.setString("X: " + std::to_string(*scoreX));
+
+    txtScoreO.setFont(font);
+    txtScoreO.setCharacterSize(48);
+    txtScoreO.setFillColor(sf::Color::White);
+    txtScoreO.setPosition(8, 64);
+    txtScoreO.setString("O: " + std::to_string(*scoreO));
+}
+
+Engine::~Engine() {
+    scoreO = nullptr;
+    scoreX = nullptr;
+    delete scoreO;
+    delete scoreX;
 }
 
 void Engine::gameLoop() {
@@ -32,6 +55,8 @@ void Engine::gameLoop() {
 
     const auto renderer = [this, &window] () { // od c++14 (ciekawostka)
         window.draw(playerTurnPlace);
+        window.draw(txtScoreX);
+        window.draw(txtScoreO);
 
         for (int i = 0; i < mapSizeY; i++) {
             for (int j = 0; j < mapSizeX; j++) {
@@ -51,7 +76,12 @@ void Engine::gameLoop() {
                         winScore++;
                         if (winScore == forWin - 1) {
                             winScore = 0;
-                            std::cout << "Wygrywa: " << map[j][i].sign << std::endl;
+                            if (map[j][i].sign == 'X') {
+                                txtScoreX.setString("X: " + std::to_string(++*scoreX));
+                            }
+                            else if (map[j][i].sign == 'O') {
+                                txtScoreO.setString("O: " + std::to_string(++*scoreO));
+                            }
                             return true;
                         }
                     }
@@ -70,7 +100,12 @@ void Engine::gameLoop() {
                         winScore++;
                         if (winScore == forWin - 1) {
                             winScore = 0;
-                            std::cout << "Wygrywa: " << map[i][j].sign << std::endl;
+                            if (map[i][j].sign == 'X') {
+                                txtScoreX.setString("X: " + std::to_string(++*scoreX));
+                            }
+                            else if (map[i][j].sign == 'O') {
+                                txtScoreO.setString("O: " + std::to_string(++*scoreO));
+                            }
                             return true;
                         }
                     }
@@ -89,7 +124,12 @@ void Engine::gameLoop() {
                         winScore++;
                         if (winScore == forWin - 1) {
                             winScore = 0;
-                            std::cout << "Wygrywa: " << map[i][j].sign << std::endl;
+                            if (map[i][j].sign == 'X') {
+                                txtScoreX.setString("X: " + std::to_string(++*scoreX));
+                            }
+                            else if (map[i][j].sign == 'O') {
+                                txtScoreO.setString("O: " + std::to_string(++*scoreO));
+                            }
                             return true;
                         }
                     }
@@ -108,7 +148,12 @@ void Engine::gameLoop() {
                         winScore++;
                         if (winScore == forWin - 1) {
                             winScore = 0;
-                            std::cout << "Wygrywa: " << map[j][i].sign << std::endl;
+                            if (map[j][i].sign == 'X') {
+                                txtScoreX.setString("X: " + std::to_string(++*scoreX));
+                            }
+                            else if (map[j][i].sign == 'O') {
+                                txtScoreO.setString("O: " + std::to_string(++*scoreO));
+                            }
                             return true;
                         }
                     }
